@@ -1,0 +1,70 @@
+// NotFound.scss
+.not-found-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5; /* Light background */
+  text-align: center;
+}
+
+.not-found-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+
+  .not-found-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: #ff4d4f; /* Red to highlight 404 */
+    margin-bottom: 16px;
+    animation: bounce 0.8s ease-in-out;
+  }
+
+  .not-found-subtitle {
+    font-size: 24px;
+    color: #595959;
+    margin-bottom: 8px;
+  }
+
+  .not-found-text {
+    font-size: 16px;
+    color: #8c8c8c;
+    margin-bottom: 24px;
+  }
+
+  .not-found-button {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #40a9ff;
+      border-color: #40a9ff;
+    }
+  }
+}
+
+/* Keyframes for subtle animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
